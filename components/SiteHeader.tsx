@@ -76,7 +76,8 @@ export function SiteHeader() {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed inset-0 bg-[#faf9f7] z-50 md:hidden transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col justify-center px-8 ${
+        onClick={() => setIsOpen(false)}
+        className={`fixed inset-0 bg-[#faf9f7] z-40 md:hidden transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col justify-center px-8 ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
