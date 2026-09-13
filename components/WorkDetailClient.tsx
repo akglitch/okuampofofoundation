@@ -38,7 +38,7 @@ export function WorkDetailClient({ artwork, related }: WorkDetailClientProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-57px)]">
 
           {/* Left — image viewer */}
-          <div className="sticky top-[57px] h-[calc(100vh-57px)] flex flex-col bg-[#ece9e4]">
+          <div className="lg:sticky lg:top-[57px] h-[60vh] lg:h-[calc(100vh-57px)] flex flex-col bg-[#ece9e4]">
 
             {/* Main image */}
             <div className="relative flex-1 overflow-hidden">
