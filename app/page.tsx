@@ -277,7 +277,7 @@ function WorkCard({
         <div className="flex items-baseline justify-between gap-2 mb-2">
           <Link
             href={`/works/${work.slug}`}
-            className="font-serif text-[0.9rem] font-light text-[#1c1c1a] leading-snug hover:text-[#b85c2c] transition-colors focus-visible:outline-none focus-visible:underline"
+            className="font-serif text-base font-medium text-[#1c1c1a] leading-snug hover:text-[#b85c2c] transition-colors focus-visible:outline-none focus-visible:underline"
           >
             {work.title}
           </Link>
