@@ -105,16 +105,13 @@ export default function Home() {
               </h2>
               <div className="space-y-4">
                 <p className="font-sans text-[13px] leading-[1.9] text-white/65">
-                  Born in Accra, Dr Oku Ampofo began carving under his uncle,
-                  a master of the Asante woodworking tradition. Over four decades his
-                  practice has grown to include cast bronze, Shona serpentine from Zimbabwe,
-                  and hand-coiled terracotta — always working by hand, never from a mould.
+                  Born in 1908 in Akuapem, Gold Coast, Dr Oku Ampofo was a pioneer of modern Ghanaian art, an internationally renowned sculptor, and a practicing physician. He was the first Ghanaian to receive a government scholarship to study medicine in Edinburgh, Scotland.
                 </p>
                 <p className="font-sans text-[13px] leading-[1.9] text-white/65">
-                  He divides his time between studios in Accra and Harare, where access to
-                  serpentine stone from the Gurungwe mountains keeps drawing him back.
-                  His work has been collected across West Africa, the United Kingdom,
-                  and the United States.
+                  He drew deep inspiration from traditional Akan wood and brass carving, developing a distinctive modernist style that celebrated African heritage and cultural identity. His work often explored themes of family, religion, and everyday life in Ghana.
+                </p>
+                <p className="font-sans text-[13px] leading-[1.9] text-white/65">
+                  His work has been exhibited and collected across West Africa, the United Kingdom, and the United States. He remained active in both medicine and the arts until his passing in 1998.
                 </p>
               </div>
             </div>
@@ -122,11 +119,11 @@ export default function Home() {
             <div className="mt-10 pt-8 border-t border-white/10 grid grid-cols-2 gap-6">
               <div>
                 <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Based</p>
-                <p className="font-sans text-[13px] text-white/70">Accra &amp; Harare</p>
+                <p className="font-sans text-[13px] text-white/70">Mampong-Akuapem & Accra</p>
               </div>
               <div>
-                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Active since</p>
-                <p className="font-sans text-[13px] text-white/70">1982</p>
+                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Active</p>
+                <p className="font-sans text-[13px] text-white/70">1940s – 1990s</p>
               </div>
               <div>
                 <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Materials</p>
@@ -212,7 +209,7 @@ export default function Home() {
           © {new Date().getFullYear()} Dr Oku Ampofo
         </p>
         <p className="font-sans text-[10px] text-[#9a9690]">
-          Accra, Ghana &middot; Harare, Zimbabwe
+          Accra, Ghana &middot; Mampong-Akuapem, Ghana
         </p>
       </footer>
 
