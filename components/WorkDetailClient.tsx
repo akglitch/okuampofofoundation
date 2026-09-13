@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Artwork } from "@/types/artwork";
 import { formatPrice, yearString } from "@/lib/artwork-utils";
+import { SiteHeader } from "@/components/SiteHeader";
 
 interface WorkDetailClientProps {
   artwork: Artwork;
@@ -19,19 +20,7 @@ export function WorkDetailClient({ artwork, related }: WorkDetailClientProps) {
 
   return (
     <div className="bg-[#faf9f7] min-h-screen">
-
-      {/* ─── HEADER ─── */}
-      <header className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-5 md:px-10 py-4 bg-[#faf9f7]/90 backdrop-blur-sm border-b border-[#e2e0db]">
-        <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b85c2c]">
-          <p className="font-serif text-[1rem] font-light text-[#1c1c1a]">Dr Oku Ampofo</p>
-        </Link>
-        <Link
-          href="/#works"
-          className="font-sans text-[11px] uppercase tracking-widest text-[#9a9690] hover:text-[#b85c2c] transition-colors focus-visible:outline-none focus-visible:underline"
-        >
-          ← All works
-        </Link>
-      </header>
+      <SiteHeader />
 
       {/* ─── MAIN ─── */}
       <main className="pt-[57px]">

@@ -3,35 +3,14 @@ import Link from "next/link";
 import { MOCK_ARTWORKS } from "@/lib/mock-artworks";
 import { formatPrice } from "@/lib/artwork-utils";
 import { HeroSlider } from "@/components/HeroSlider";
+import { SiteHeader } from "@/components/SiteHeader";
 
 export default function Home() {
   const [, ...works] = MOCK_ARTWORKS;
 
   return (
     <div className="bg-[#faf9f7] min-h-screen">
-
-      {/* ─── HEADER — transparent, floats over hero ─── */}
-      <header className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-5 md:px-10 py-5">
-        <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white">
-          <p className="font-serif text-[1rem] font-light text-white mix-blend-difference leading-none">
-            Dr Oku Ampofo
-          </p>
-          <p className="font-sans text-[9px] text-white/60 mix-blend-difference mt-0.5 tracking-widest uppercase">
-            Sculptor
-          </p>
-        </Link>
-        <nav className="flex items-center gap-6 md:gap-10">
-          {["Works", "About", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="font-sans text-[11px] uppercase tracking-widest text-white mix-blend-difference hover:opacity-60 transition-opacity"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-      </header>
+      <SiteHeader />
 
       {/* ─── HERO — full bleed ─── */}
       <section className="relative w-full" style={{ height: "100svh" }}>
