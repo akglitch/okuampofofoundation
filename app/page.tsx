@@ -4,6 +4,7 @@ import { MOCK_ARTWORKS } from "@/lib/mock-artworks";
 import { formatPrice } from "@/lib/artwork-utils";
 import { HeroSlider } from "@/components/HeroSlider";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PromoSection } from "@/components/PromoSection";
 
 export default function Home() {
   const [, ...works] = MOCK_ARTWORKS;
@@ -201,6 +202,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─── PROMO BANNER ─── */}
+      <PromoSection />
 
       {/* ─── FOOTER ─── */}
       <footer className="px-5 md:px-10 py-6 border-t border-[#e2e0db] flex flex-col sm:flex-row gap-3 justify-between">
