@@ -28,13 +28,9 @@ export function SiteHeader() {
       <header className={headerClass}>
         <Link href="/" onClick={() => setIsOpen(false)} className="relative z-[60] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b85c2c] block">
           <p className={`font-serif text-[1rem] font-light leading-none ${textClass} transition-colors ${isOpen ? '!text-[#1c1c1a] !mix-blend-normal' : ''}`}>
-            Dr Oku Ampofo
+            Okuampofo Foundation
           </p>
-          {isHomePage && !isOpen && (
-            <p className="font-sans text-[9px] text-white/60 mix-blend-difference mt-0.5 tracking-widest uppercase">
-              Sculptor
-            </p>
-          )}
+
         </Link>
 
         {/* Desktop Nav */}

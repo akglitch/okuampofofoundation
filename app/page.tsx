@@ -18,11 +18,26 @@ export default function Home() {
 
         {/* Slider fills the entire viewport */}
         <div className="absolute inset-0">
-          <HeroSlider works={MOCK_ARTWORKS} />
+          <HeroSlider
+            images={[
+              "/ChatGPT Image Sep 14, 2026, 10_29_11 AM.png",
+              "/ChatGPT Image Sep 14, 2026, 10_30_02 AM.png",
+              "/ChatGPT Image Sep 14, 2026, 10_33_58 AM - Copy.png",
+            ]}
+          />
         </div>
 
+        {/* Left gradient — darkens left side so logo + name text stay legible */}
+        <div
+          className="absolute inset-y-0 left-0 z-10 w-2/3 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(28,28,26,0.80) 0%, rgba(28,28,26,0.45) 50%, transparent 100%)",
+          }}
+        />
+
         {/* Name block — floats above the slider's bottom info strip */}
-        <div className="absolute left-0 z-10 px-5 md:px-10" style={{ bottom: "160px" }}>
+        <div className="absolute left-0 z-20 px-5 md:px-10" style={{ bottom: "160px" }}>
           <p className="font-sans text-[9px] uppercase tracking-[0.28em] text-white/60 mb-4">
             Sculptor &middot; Accra, Ghana &middot; est. 1958
           </p>
