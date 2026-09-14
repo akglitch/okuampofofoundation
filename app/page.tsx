@@ -79,78 +79,19 @@ export default function Home() {
       </section>
 
       {/* ─── PROCESS ─── */}
-      {/* A quote and a material note — breaks the grid rhythm */}
+      {/* A quote — breaks the grid rhythm */}
       <section className="px-5 md:px-10 py-20 border-t border-[#e2e0db] max-w-3xl">
         <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-8">
-          On the work
+          On cultural renaissance
         </p>
         <blockquote
           className="font-serif font-light text-[#1c1c1a] leading-[1.3] tracking-[-0.01em] mb-8"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2.2rem)" }}
         >
-          &ldquo;The stone already knows what it wants to become.
-          My job is to listen and remove what is not needed.&rdquo;
+          &ldquo;With proper guidance, Sankofa may well see a definite renaissance
+          in Ghanaian civilisation.&rdquo;
         </blockquote>
-        <p className="font-sans text-[12px] text-[#9a9690]">— Dr Oku Ampofo</p>
-      </section>
-
-      {/* ─── ABOUT ─── */}
-      <section id="about" className="bg-[#1c1c1a] text-white">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-
-          {/* Image — takes the full left column */}
-          <div className="relative aspect-[4/5] md:aspect-auto md:min-h-[600px]">
-            <Image
-              src={works[1].media[0]}
-              alt="Dr Oku Ampofo"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover grayscale"
-            />
-          </div>
-
-          {/* Text */}
-          <div className="px-8 py-14 md:px-14 md:py-20 flex flex-col justify-between">
-            <div>
-              <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-8">
-                About
-              </p>
-              <h2 className="font-serif text-3xl md:text-4xl font-light leading-tight mb-8">
-                Dr Oku Ampofo
-              </h2>
-              <div className="space-y-4">
-                <p className="font-sans text-[13px] leading-[1.9] text-white/65">
-                  Born in 1908 in Akuapem, Gold Coast, Dr Oku Ampofo was a pioneer of modern Ghanaian art, an internationally renowned sculptor, and a practicing physician. He was the first Ghanaian to receive a government scholarship to study medicine in Edinburgh, Scotland.
-                </p>
-                <p className="font-sans text-[13px] leading-[1.9] text-white/65">
-                  He drew deep inspiration from traditional Akan wood and brass carving, developing a distinctive modernist style that celebrated African heritage and cultural identity. His work often explored themes of family, religion, and everyday life in Ghana.
-                </p>
-                <p className="font-sans text-[13px] leading-[1.9] text-white/65">
-                  His work has been exhibited and collected across West Africa, the United Kingdom, and the United States. He remained active in both medicine and the arts until his passing in 1998.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-white/10 grid grid-cols-2 gap-6">
-              <div>
-                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Based</p>
-                <p className="font-sans text-[13px] text-white/70">Mampong-Akuapem & Accra</p>
-              </div>
-              <div>
-                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Active</p>
-                <p className="font-sans text-[13px] text-white/70">1940s – 1990s</p>
-              </div>
-              <div>
-                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Materials</p>
-                <p className="font-sans text-[13px] text-white/70">Bronze, stone, wood, terracotta</p>
-              </div>
-              <div>
-                <p className="font-sans text-[9px] uppercase tracking-widest text-[#9a9690] mb-1">Commissions</p>
-                <p className="font-sans text-[13px] text-white/70">Open — 3–6 month lead time</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p className="font-sans text-[12px] text-[#9a9690]">— Dr Oku Ampofo, 1968</p>
       </section>
 
       {/* ─── CONTACT ─── */}

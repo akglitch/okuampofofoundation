@@ -36,13 +36,17 @@ export function SiteHeader() {
         {/* Desktop Nav */}
         {isHomePage ? (
           <nav className="hidden md:flex items-center gap-10">
-            {["Works", "About", "Contact"].map((item) => (
+            {[
+              { label: "Works", href: "/#works" },
+              { label: "About", href: "/about" },
+              { label: "Contact", href: "/#contact" },
+            ].map(({ label, href }) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={label}
+                href={href}
                 className={`font-sans text-[11px] uppercase tracking-widest transition-opacity ${linkClass}`}
               >
-                {item}
+                {label}
               </a>
             ))}
           </nav>
@@ -86,7 +90,7 @@ export function SiteHeader() {
             Works
           </Link>
           <Link
-            href="/#about"
+            href="/about"
             onClick={() => setIsOpen(false)}
             className="font-serif text-4xl font-light text-[#1c1c1a]"
           >
